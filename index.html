@@ -1,22 +1,20 @@
-<!DOCTYPE html>
-<html lang="pt-BR">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Diagnóstico de Maturidade Institucional</title>
-</head>
-<body>
-    <h1>Formulário de Diagnóstico de Maturidade Institucional</h1>
-    <form>
-        <label for="nome">Nome:</label><br>
-        <input type="text" id="nome" name="nome"><br><br>
-        <label for="email">E-mail:</label><br>
-        <input type="email" id="email" name="email"><br><br>
-        <label for="telefone">Telefone:</label><br>
-        <input type="tel" id="telefone" name="telefone"><br><br>
-        <label for="diagnostico">Diagnóstico:</label><br>
-        <textarea id="diagnostico" name="diagnostico" rows="10" cols="30"></textarea><br><br>
-        <input type="submit" value="Enviar">
-    </form>
-</body>
-</html>
+<!-- Complete Diagnostic Form -->
+<form id="diagnosticForm">
+    <label for="name">Name:</label>
+    <input type="text" id="name" name="name" required>
+
+    <label for="age">Age:</label>
+    <input type="number" id="age" name="age" required>
+
+    <label for="gender">Gender:</label>
+    <select id="gender" name="gender" required>
+        <option value="male">Male</option>
+        <option value="female">Female</option>
+        <option value="other">Other</option>
+    </select>
+
+    <label for="diagnosis">Diagnosis:</label>
+    <textarea id="diagnosis" name="diagnosis" required></textarea>
+
+    <input type="submit" value="Submit">
+</form>
